@@ -1,5 +1,5 @@
 
-<img src='http://www.chiangmaijointour.com/upload/logo.JPG' />
+<img src='http://www.chiangmaijointour.com/upload/logo.JPG' width='400' />
 
 # hexo-theme-chiangmai
 
