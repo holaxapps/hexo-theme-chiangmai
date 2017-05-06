@@ -1,10 +1,9 @@
 
-<img src='http://www.chiangmaijointour.com/upload/logo.JPG' height='300' align='right' />
+<img src='http://www.chiangmaijointour.com/upload/logo.JPG' height='240' align='right' />
 
 # hexo-theme-chiangmai
 
-hexo-theme-chiangmai is kind of Hexo theme using HTML5, Sass, Jade.
-An example page with hexo-theme-chiangmai could be found at the link below.
+hexo-theme-chiangmai is kind of Hexo theme using HTML5, Sass, Jade. An example page with hexo-theme-chiangmai could be found at the link below.
 
 - http://holaxprogramming.com/
 
