@@ -1,0 +1,21 @@
+menu:
+    기초강의: /categories/python
+    Tutorials: /categories/tutorials
+    Archives: /archives/
+    Github: https://github.com/stunstunstun
+    RSS: /atom.xml
+
+favicon: /favicon.ico
+logo: /logo.png
+
+# Comment
+disqus: holaxapps
+duoshuo:
+cloudTie:
+
+# Analytics
+# google-analytics:
+ga: UA-97419941-1
+
+# Copyright Infomation
+startyear: 2012

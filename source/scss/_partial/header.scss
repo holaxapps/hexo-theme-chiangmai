@@ -1,0 +1,22 @@
+header {
+    min-height: 120px;
+    text-align: center;
+
+    .nav {
+        float: none;
+        display: block;
+    }
+
+    .logo-link img {
+        height: 120px;
+    }
+
+    .nav-list-item {
+        display: inline-block;
+        padding: 19px  10px ;
+        a {
+            font-size: 16px;
+            line-height: 1.4;
+        }
+    }
+}

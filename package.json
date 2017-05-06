@@ -1,0 +1,29 @@
+{
+  "name": "hexo-theme-chiangmai",
+  "version": "0.1.0",
+  "description": "A hexo theme inspired by Chiang Mai",
+  "main": "index.js",
+  "scripts": {
+    "sass": "gulp sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stunstunstun/hexo-theme-chiangmai"
+  },
+  "keywords": [
+    "hexo",
+    "theme",
+    "chiangmai"
+  ],
+  "author": "stunstunstun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stunstunstun/hexo-theme-chiangmai/issues"
+  },
+  "homepage": "https://github.com/stunstunstun/hexo-theme-stunstunstun#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-sass": "^2.0.4"
+  }
+}
