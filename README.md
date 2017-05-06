@@ -3,7 +3,7 @@
 
 # hexo-theme-chiangmai
 
-hexo-theme-chiangmai is kind of Hexo theme using HTML5, Sass, Jade, You could see below page for preview.
+hexo-theme-chiangmai is kind of Hexo theme using HTML5, Sass, Jade, You could see page below for preview.
 
 - http://holaxprogramming.com/
 
