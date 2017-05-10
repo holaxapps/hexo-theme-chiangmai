@@ -1,5 +1,5 @@
 header {
-    min-height: 120px;
+    min-height: 150px;
     text-align: center;
 
     .nav {
@@ -8,15 +8,26 @@ header {
     }
 
     .logo-link img {
-        height: 120px;
+        height: 150px;
     }
 
     .nav-list-item {
         display: inline-block;
-        padding: 19px  10px ;
+        padding: 0px 15px;
+        position: relative;
+        a:before {
+            content: "#";
+            color: #ce1458;
+            position: absolute;
+            left: 0.12em;
+            top: -0.03em;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
         a {
             font-size: 16px;
-            line-height: 1.4;
+            line-height: 1.3;
         }
     }
 }

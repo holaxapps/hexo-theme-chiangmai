@@ -1,9 +1,9 @@
 menu:
     기초강의: /categories/python
-    Tutorials: /categories/tutorials
-    Archives: /archives/
-    Github: https://github.com/stunstunstun
-    RSS: /atom.xml
+    튜토리얼: /categories/tutorials
+    전체보기: /archives/
+    깃허브: https://github.com/stunstunstun
+    구독하기: /atom.xml
 
 favicon: /favicon.ico
 logo: /logo.png
