@@ -1,9 +1,8 @@
 menu:
     기초강의: /categories/python
-    튜토리얼: /categories/tutorials
-    전체보기: /archives/
+    블로그: /archives/
     깃허브: https://github.com/stunstunstun
-    구독하기: /atom.xml
+    구독하기: http://holaxprogramming.com/atom.xml
 
 favicon: /favicon.ico
 logo: /logo.png

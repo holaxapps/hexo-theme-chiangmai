@@ -1,6 +1,6 @@
 ::selection {
     color: #FFFFFF;
-    background-color: #42b983;
+    background-color: #ce1458;
 }
 
 html, body {
@@ -31,6 +31,11 @@ ul {
 a, a:active {
     color: #2c3e50;
     text-decoration: none;
+}
+
+a.nav-list-link.active,
+a.nav-list-link:hover {
+    color: #ce1458
 }
 
 a.post-title-link:hover {

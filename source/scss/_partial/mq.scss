@@ -17,7 +17,12 @@ main.container {
     .wrap {
         width: 100%;
     }
-    
+
+    header {
+        .logo-link img {
+            height: 100px;
+        }
+    }
     main.container,
     .home.post-list,
     .archive {
