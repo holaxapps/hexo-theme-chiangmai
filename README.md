@@ -3,19 +3,19 @@
 
 # hexo-theme-chiangmai
 
-hexo-theme-chiangmai is kind of Hexo theme using HTML5, Less, Pug, Gulp. An example page with hexo-theme-chiangmai could be found at the link below.
+hexo-theme-chiangmai is kind of Hexo theme using HTML5, SCSS, Pug, Gulp. An example page with hexo-theme-chiangmai could be found at the below.
 
-- http://holaxprogramming.com/
+> http://holaxprogramming.com/
 
 ## Install
 
 ### Prerequisite
 
+- hexo-browsersync 
 - hexo-renderer-pug
 - hexo-generator-feed 
-- hexo-generator-sitemap 
-- hexo-browsersync 
 - hexo-generator-archive
+- hexo-generator-sitemap 
 
 ``` bash
 $ hexo init my-blog
@@ -23,6 +23,14 @@ $ cd my-blog
 $ npm install
 $ npm install --save hexo-renderer-pug hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive
 $ git clone https://github.com/stunstunstun/hexo-theme-chiangmai.git themes/chiangmai
+```
+
+### To use gulp
+
+``` bash
+$ cd themes/chiangmai
+$ npm install --save-dev gulp gulp-sass gulp-autoprefixer
+$ gulp
 ```
 
 ## Configuration
@@ -39,6 +47,7 @@ archive_generator:
     monthly: false
     daily: false
 ```
+
 ## Deploy
 
 ```shell
