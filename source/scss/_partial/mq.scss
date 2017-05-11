@@ -1,5 +1,5 @@
 main.container {
-    margin: 2em 10px;
+    margin: 3em 10px;
 }
 
 @media screen and (min-width: 700px) {
@@ -7,6 +7,7 @@ main.container {
         width: 700px;
         margin: 0 auto;
     }
+
     header {
         padding: 0px 100px;
     }
@@ -16,23 +17,41 @@ main.container {
     .wrap {
         width: 100%;
     }
-    header {
-        padding: 0px 0px;
-    }
+    
     main.container,
     .home.post-list,
     .archive {
-        margin-top: 0;
+        margin-top: 30px;
     }
+
     .archive .post-item {
         padding-left: 20px;
     }
-    .post-content {
-        h2, h3, h4, h5, h6 {
-            max-width: 300px;
-            left: 15px;
+
+    .post-block {
+        .post-title {
+            font-size: 1.3em;
         }
     }
+
+    .post-content {
+        h2, h3, h4, h5, h6 {
+            max-width: 500px;
+        }
+        h2, h3 {
+            font-size: 1.3em;
+            a:before {
+                content: "";
+            }
+        }
+        h4, h5, h6 {
+            font-size: 1.15em;
+        }
+        strong {
+          font-size: 1.0em;
+        }
+    }
+
     .ds-thread,
     #disqus_thread {
         margin: 2em 10px;
