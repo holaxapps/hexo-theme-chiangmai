@@ -4,10 +4,12 @@ block site_title
     != page.title + " · " + config.title
 
 block description
-    - var desc = page.desc || page.title + ' - ' + config.author;
+    - var desc = page.desc || config.description;
+    - var image = page.image || config.url + '/logo.png';
     meta(name="description", content=desc)
     meta(name="og:title", content=page.title)
     meta(name="og:description", content=desc)
+    meta(name="og:image", content=image)
 
 block container
     include mixins/post

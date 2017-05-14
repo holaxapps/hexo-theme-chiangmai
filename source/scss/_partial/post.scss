@@ -1,8 +1,8 @@
 .post-block {
     .post-title {
         margin: 0.65em 0;
-        color: #2c3e50;
-        font-size: 1.5em;
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 30px;
     }
 
     .post-info {
@@ -40,12 +40,14 @@
         position: relative;
         margin: 25px 0 0 0;
     }
+
     h2, h3 {
-        font-size: 1.5em;
+        font-size: 28px;
     }
     h4, h5, h6 {
-        font-size: 1.1em;
+        font-size: 18px;
     }
+
     a {
         color: #4f80e0;
         word-break: break-all;
@@ -61,7 +63,7 @@
     img {
         display: block;
         max-width: 100%;
-        margin: 1em auto;
+        margin: 1.5em auto;
     }
     & > table,
     & > figure.highlight {

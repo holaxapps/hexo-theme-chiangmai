@@ -18,6 +18,10 @@ main.container {
         width: 100%;
     }
 
+    body {
+        font-size: 15px;
+    }
+
     header {
         .logo-link img {
             height: 100px;
@@ -27,29 +31,32 @@ main.container {
                 content: "";
             }
             a {
-                font-size: 1.0em;
-                line-height: 1.2;
+                font-size: 16px;
             }
         }
-    }
-    main.container,
-    .home.post-list,
-    .archive {
-        margin-top: 30px;
     }
 
     .archive .post-item {
         padding-left: 20px;
     }
 
+    .post-block {
+        .post-title {
+            font-size: 26px;
+        }
+    }
     .post-content {
         h2, h3, h4, h5, h6 {
             max-width: 700px;
         }
         h2, h3 {
+            font-size: 26px;
             a:before {
                 content: "";
             }
+        }
+        h4, h5, h6 {
+            font-size: 16px;
         }
     }
 
