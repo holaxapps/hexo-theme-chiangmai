@@ -14,7 +14,7 @@ body {
     font-size: 15px;
     line-height: 1.6;
     background-color: #fff;
-    font-family: 'sourcesanspro', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Nanum Barun Gothic', 'Helvetica Neue', Arial, sans-serif;
 }
 
 ul.nav,
@@ -35,6 +35,7 @@ a, a:active {
 
 a.nav-list-link.active,
 a.nav-list-link:hover {
+    border-bottom: 2px solid #ce1458;
     color: #ce1458
 }
 

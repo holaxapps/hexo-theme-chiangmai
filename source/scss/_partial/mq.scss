@@ -22,6 +22,15 @@ main.container {
         .logo-link img {
             height: 100px;
         }
+        .nav-list-item {
+            a:before {
+                content: "";
+            }
+            a {
+                font-size: 1.0em;
+                line-height: 1.2;
+            }
+        }
     }
     main.container,
     .home.post-list,
@@ -33,27 +42,14 @@ main.container {
         padding-left: 20px;
     }
 
-    .post-block {
-        .post-title {
-            font-size: 1.3em;
-        }
-    }
-
     .post-content {
         h2, h3, h4, h5, h6 {
-            max-width: 500px;
+            max-width: 700px;
         }
         h2, h3 {
-            font-size: 1.3em;
             a:before {
                 content: "";
             }
-        }
-        h4, h5, h6 {
-            font-size: 1.15em;
-        }
-        strong {
-          font-size: 1.0em;
         }
     }
 

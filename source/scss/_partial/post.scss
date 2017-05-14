@@ -7,7 +7,7 @@
 
     .post-info {
         color: #7f8c8d;
-        margin: 1.2em 0;
+        margin-bottom: 2em;
         span {
             margin-left: 0.5rem;
         }
@@ -23,7 +23,7 @@
 }
 
 .post-content {
-    h2, h3, h4, h5, h6 {
+    h2, h3 {
         position: relative;
         margin: 35px 0 0 0;
         a:before {
@@ -31,24 +31,20 @@
             color: #ce1458;
             position: absolute;
             left: -0.8em;
-            top: -4.5px;
-            font-size: 1.3em;
+            top: -0.15em;
+            font-size: 1.25em;
             font-weight: bold;
         }
     }
     h4, h5, h6 {
+        position: relative;
         margin: 25px 0 0 0;
-        a:before {
-            content: "";
-        }
     }
-
     h2, h3 {
-        font-size: 22px;
+        font-size: 1.5em;
     }
-
     h4, h5, h6 {
-        font-size: 18px;
+        font-size: 1.1em;
     }
     a {
         color: #4f80e0;

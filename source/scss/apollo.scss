@@ -11,9 +11,17 @@
 @import "_partial/copyright";
 
 @font-face {
-    font-family: 'sourcesanspro';
-    src: url('../font/sourcesanspro.woff2') format('woff2'),
-         url('../font/sourcesanspro.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Nanum Barun Gothic';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../font/NanumBarunGothic.woff2') format('woff2'),
+       url('../font/NanumBarunGothic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Nanum Barun Gothic';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../font/NanumBarunGothicBold.woff2') format('woff2'),
+       url('../font/NanumBarunGothicBold.woff') format('woff');
 }
