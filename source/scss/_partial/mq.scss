@@ -27,13 +27,16 @@ main.container {
             height: 100px;
         }
         .nav-list-item {
+            padding: 2px 10px;
             a:before {
                 content: "";
             }
-            a {
-                font-size: 16px;
-            }
         }
+    }
+
+    main.container,
+    .archive {
+        margin-top: 35px;
     }
 
     .archive .post-item {
