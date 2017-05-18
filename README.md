@@ -11,11 +11,11 @@ hexo-theme-chiangmai is kind of Hexo theme using HTML5, SCSS, Pug, Gulp. An exam
 
 ### Prerequisite
 
-- hexo-browsersync 
-- hexo-renderer-pug
 - hexo-generator-feed 
 - hexo-generator-archive
 - hexo-generator-sitemap 
+- hexo-renderer-pug
+- hexo-browsersync 
 
 ``` bash
 $ hexo init my-blog
