@@ -3,7 +3,7 @@ mixin postInfo(item)
         != full_date(item.date, 'll')
 
 //- Index Page
-mixin posts()
+mixin posts
     ul.home.post-list
         - page.posts.each(function (item) {
             li.post-list-item
@@ -18,7 +18,7 @@ mixin posts()
         - })
 
 //- Archive Page
-mixin postList()
+mixin postList
     .archive
         - var year = 0;
         - var change = false;

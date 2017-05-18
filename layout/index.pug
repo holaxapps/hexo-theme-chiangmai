@@ -1,0 +1,21 @@
+extends base.pug
+
+block site_title
+    config.title
+
+block description
+    meta(name="description", content=config.description)
+    meta(name="og:title", content=config.title)
+    meta(name="og:description", content=desc)
+    meta(name="og:image", content="http://holaxprogramming.com/logo.png")
+          
+block container
+    include mixins/post.pug
+    +posts
+
+block pagination
+    include mixins/paginator.pug
+    +home
+
+block copyright
+    include partial/copyright.pug

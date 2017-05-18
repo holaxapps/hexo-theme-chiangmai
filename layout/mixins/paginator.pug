@@ -1,4 +1,4 @@
-mixin home()
+mixin home
     - var prev = page.prev_link
     - var next = page.next_link
     .paginator
@@ -7,7 +7,7 @@ mixin home()
         if page.next
             a.next(href=url_for(next))!= __('next')
 
-mixin post()
+mixin post
     - var prev = page.prev ? page.prev.path : false;
     - var next = page.next ? page.next.path : false; 
     .paginator

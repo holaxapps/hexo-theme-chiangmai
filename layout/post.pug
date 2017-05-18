@@ -1,4 +1,4 @@
-extends partial/layout
+extends base.pug
 
 block site_title
     != page.title + " · " + config.title
@@ -12,13 +12,13 @@ block description
     meta(name="og:image", content=image)
 
 block container
-    include mixins/post
+    include mixins/post.pug
     +post(page)
 
 block pagination
-    include mixins/paginator
-    +post()
-    include partial/comment
+    include mixins/paginator.pug
+    +post
+    include partial/comment.pug
 
-block copyright
-    include partial/copyright
+block copyright.pug
+    include partial/copyright.pug
