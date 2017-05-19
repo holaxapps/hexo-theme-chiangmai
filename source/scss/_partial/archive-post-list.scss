@@ -1,26 +1,34 @@
 .archive {
     max-width: 500px;
     margin: 5em auto;
+
     .post-item {
-        padding: 2px 0 0 50px;
+        padding: 2px 0 0 20px;
     }
+
     .post-time,
     .post-title-link {
         font-size: 1rem;
     }
+
+    .post-info {
+        float: left;
+        width: 130px;
+        color: #7f8c8d;
+    }
+
+    .post-date {
+        margin-right: 12px;
+    }
+
     .post-title-link {
         display: block;
-        margin-left: 125px;
+        margin-left: 140px;
         color: #4f88ea;
         word-break: break-all;
         &:hover {
             border-bottom: 0;
             color: #267B54;
         }
-    }
-    .post-info {
-        float: left;
-        width: 125px;
-        color: #7f8c8d;
     }
 }

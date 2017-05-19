@@ -1,8 +1,14 @@
 mixin postInfo(item)
-    .post-info
-        != full_date(item.date, 'll')
-        //- span categories
-        
+    if !is_home()
+        .post-info
+            .post-categories
+                if (is_home() || is_post()) && item.categories && item.categories.length
+                    each category in item.categories.data
+                        a.category-area(href=url_for(config.url + '/categories/' + category.name) target="_self")
+                            span= category.name
+            .post-date
+                != full_date(item.date, 'll')
+                        
 //- Index Page
 mixin posts
     ul.home.post-list
@@ -15,7 +21,8 @@ mixin posts
                     +postInfo(item)
                     .post-content
                         != item.excerpt
-                    a.read-more(href= url_for(item.path))!= __('more')
+                    if item.excerpt
+                        a.read-more(href= url_for(item.path))!= __('more')
         - })
 
 //- Archive Page

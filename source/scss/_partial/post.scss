@@ -1,21 +1,43 @@
 .post-block {
     .post-title {
-        margin: 0.5em 0;
+        margin: 20px 0px 12px;
         color: rgba(0, 0, 0, 0.8);
         font-size: 30px;
     }
 
     .post-info {
-        color: #7f8c8d;
-        margin-bottom: 1em;
-        span {
-            margin-left: 5px;
-            padding: 3px 5px;
-            background-color: rgba(0, 0, 0, 0.05);
-            color: rgba(0, 0, 0, 0.6);
-            border-radius: 4px;
-            white-space: inherit;
+        height: 30px;
+    }
+}
+
+.post-info {
+    .post-categories {
+        margin-top: 1px;
+        float: left;
+        position: relative;
+
+        a:before {
+            position: absolute;
+            content: "#";
+            color: rgba(0, 0, 0, 0.7);
+            left: 0em;
+            top: 0.1em;
+            font-weight: bold;
         }
+
+        a {
+            margin-left: 10px;
+            margin-right: 10px;
+            color: rgba(0, 0, 0, 0.7);
+            font-weight: bold;
+        }
+    }
+
+    .post-date {
+        float: right;
+        margin-right: 10px;
+        font-size: 15px;
+        color: #7f8c8d;
     }
 }
 
@@ -28,19 +50,21 @@
             color: rgba(0, 0, 0, 0.8);
             position: absolute;
             left: -0.8em;
-            top: -0.15em;
-            font-size: 1.25em;
+            top: -0.1em;
+            font-size: 30px;
             font-weight: bold;
         }
     }
+
     h4, h5, h6 {
         position: relative;
         margin: 25px 0 0 0;
     }
 
     h2, h3 {
-        font-size: 28px;
+        font-size: 26px;
     }
+
     h4, h5, h6 {
         font-size: 18px;
     }
@@ -49,23 +73,28 @@
         color: #4f80e0;
         word-break: break-all;
     }
+
     a:hover {
         color: #2d4f89;
     }
+
     blockquote {
         margin: 1em 0;
         padding-left: 18px;
         border-left: 4px solid #8e8e8d;
     }
+
     img {
         display: block;
         max-width: 100%;
         margin: 1.5em auto;
     }
+
     & > table,
     & > figure.highlight {
         box-shadow: 0 1px 2px rgba(0,0,0,0.125);
     }
+
     .tip {
         position: relative;
         margin: 2em 0;
@@ -78,6 +107,7 @@
             display: none;
         }
     }
+
     .tip:before {
         position: absolute;
         top: 14px;
@@ -129,9 +159,11 @@ pre {
         padding: 0;
         margin: 0;
     }
+
     .gutter {
         display: none;
     }
+
     .code pre {
         padding: 1.2em 1.4em;
         line-height: 1.5em;
@@ -178,14 +210,17 @@ pre {
     .constant {
        color: #0092db;
     }
+
     .keyword,
     .attribute {
         color: #e96900;
     }
+
     .number,
     .literal {
         color: #ae81ff;
     }
+
     .tag,
     .tag .title,
     .change,
@@ -197,15 +232,18 @@ pre {
     .tex .special {
         color: #2973b7;
     }
+
     .symbol,
     .symbol .string,
     .value,
     .regexp {
         color: #42b983;
     }
+
     .title {
         color: #83B917;
     }
+
     .tag .value,
     .string,
     .subst,
@@ -232,6 +270,7 @@ pre {
     .prompt {
         color: #4f88ea;
     }
+
     .comment,
     .java .annotation,
     .python .decorator,
@@ -243,9 +282,11 @@ pre {
     .tex .formula {
         color: #b3b3b3;
     }
+
     .deletion {
         color: #BA4545;
     }
+
     .coffeescript .javascript,
     .javascript .xml,
     .tex .formula,

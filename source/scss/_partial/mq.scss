@@ -53,13 +53,14 @@ main.container {
             max-width: 700px;
         }
         h2, h3 {
-            font-size: 26px;
+            font-size: 22px;
             a:before {
                 content: "";
             }
         }
         h4, h5, h6 {
             font-size: 16px;
+            font-weight: bold;
         }
     }
 
