@@ -1,13 +1,13 @@
 extends base.pug
 
 block site_title
-    config.title
+    != config.title
 
 block description
     meta(name="description", content=config.description)
     meta(name="og:title", content=config.title)
     meta(name="og:description", content=desc)
-    meta(name="og:image", content="http://holaxprogramming.com/logo.png")
+    meta(name="og:image", content=config.logo)
       
 block container
     include mixins/post.pug

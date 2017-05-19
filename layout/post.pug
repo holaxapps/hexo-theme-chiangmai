@@ -5,7 +5,7 @@ block site_title
 
 block description
     - var desc = page.desc || config.description;
-    - var image = page.image || config.url + '/logo.png';
+    - var image = page.image || config.url + config.logo;
     meta(name="description", content=desc)
     meta(name="og:title", content=page.title)
     meta(name="og:description", content=desc)

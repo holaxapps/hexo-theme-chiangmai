@@ -7,17 +7,14 @@
 
     .post-info {
         color: #7f8c8d;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
         span {
-            margin-left: 0.5rem;
-        }
-        a.post-from {
-            margin-left: 0.5rem;
-            padding: 3px 6px;
-            border-radius: 5px;
-            font-size: 12px;
-            color: white;
-            background-color: #E36B6B;
+            margin-left: 5px;
+            padding: 3px 5px;
+            background-color: rgba(0, 0, 0, 0.05);
+            color: rgba(0, 0, 0, 0.6);
+            border-radius: 4px;
+            white-space: inherit;
         }
     }
 }
@@ -28,7 +25,7 @@
         margin: 35px 0 0 0;
         a:before {
             content: "#";
-            color: #ce1458;
+            color: rgba(0, 0, 0, 0.8);
             position: absolute;
             left: -0.8em;
             top: -0.15em;
