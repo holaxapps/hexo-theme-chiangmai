@@ -1,14 +1,24 @@
 mixin postInfo(item)
-    if !is_home()
+    if is_post()
         .post-info
-            .post-categories
-                if (is_home() || is_post()) && item.categories && item.categories.length
-                    each category in item.categories.data
-                        a.category-area(href=url_for(config.url + '/categories/' + category.name) target="_self")
-                            span= category.name
+            .post-info-profile
+                a(href=url_for(theme.profile_url) target="_blank")
+                    img(src=url_for(theme.profile))
+            .post-info-details
+                .post-categories
+                    if item.categories && item.categories.length
+                        each category in item.categories.data
+                            a(href=url_for('/categories/' + category.name) target="_self")
+                                span!= category.name.toUpperCase()
+                .post-date
+                    != full_date(item.date, 'll') + __('date_desc')
+    else if is_home()
+        .post-info
+    else if is_archive() || is_category()
+        .post-info
             .post-date
                 != full_date(item.date, 'll')
-                        
+                                                    
 //- Index Page
 mixin posts
     ul.home.post-list
@@ -21,8 +31,7 @@ mixin posts
                     +postInfo(item)
                     .post-content
                         != item.excerpt
-                    if item.excerpt
-                        a.read-more(href= url_for(item.path))!= __('more')
+                    a.read-more(href= url_for(item.path))!= __('more')
         - })
 
 //- Archive Page

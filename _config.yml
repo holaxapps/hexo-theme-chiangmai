@@ -1,12 +1,14 @@
 menu:
     기초강의: /categories/python
     블로그: /archives/
-    깃허브: https://github.com/stunstunstun
+    깃허브: https://github.com/stunstunstun/hexo-theme-chiangmai
     구독하기: https://www.facebook.com/holaxprogramming
     RSS: https://www.holaxprogramming.com/atom.xml
 
 favicon: /favicon.ico
 logo: /logo.png
+profile: /profile.jpg
+profile_url: https://github.com/stunstunstun
 
 # Comment
 disqus: holaxapps
