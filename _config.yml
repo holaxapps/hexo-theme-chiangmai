@@ -1,9 +1,7 @@
 menu:
-    기초강의: /categories/python
+    기초강의: /categories/기초강의
     블로그: /archives/
-    깃허브: https://github.com/stunstunstun/hexo-theme-chiangmai
     구독하기: https://www.facebook.com/holaxprogramming
-    RSS: https://www.holaxprogramming.com/atom.xml
 
 favicon: /favicon.ico
 logo: /logo.png
@@ -18,4 +16,4 @@ disqus: holaxapps
 ga: UA-97419941-1
 
 # Copyright Infomation
-startyear: 2012
+startyear: 2011
