@@ -5,9 +5,10 @@ block site_title
 
 block description
     meta(name="description", content=config.description)
+    meta(name="og:type", content="website")
     meta(name="og:title", content=config.title)
     meta(name="og:description", content=desc)
-    meta(name="og:image", content=config.logo)
+    meta(name="og:image:secure_url", content=config.url + theme.logo)
       
 block container
     include mixins/post.pug

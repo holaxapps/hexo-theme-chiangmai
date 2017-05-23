@@ -1,19 +1,19 @@
 menu:
     기초강의: /categories/기초강의
-    블로그: /archives/
+    개발일기: /archives/
     구독하기: https://www.facebook.com/holaxprogramming
 
 favicon: /favicon.ico
 logo: /logo.png
-profile: /profile.jpg
+profile: /image/profile.jpg
 profile_url: https://github.com/stunstunstun
 
-# Comment
+# Comment:
 disqus: holaxapps
-
-# Analytics
-# google-analytics:
+# Google Analytics:
 ga: UA-97419941-1
+# Facebook App
+fb: 428034320550759
 
 # Copyright Infomation
 startyear: 2011

@@ -5,11 +5,14 @@ block site_title
 
 block description
     - var desc = page.desc || config.description;
-    - var image = page.image || config.url + theme.logo;
+    - var imageURL = page.image || config.url + theme.logo;
+    - var re = /^(https):\/\/*/gi;
+    - var imageTag = re.test(imageURL) ? "og:image:secure_url" : "og:image";
     meta(name="description", content=desc)
+    meta(name="og:type", content="article")
     meta(name="og:title", content=page.title)
     meta(name="og:description", content=desc)
-    meta(name="og:image", content=image)
+    meta(name=imageTag, content=imageURL)
 
 block container
     include mixins/post.pug
