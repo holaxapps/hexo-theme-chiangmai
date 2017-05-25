@@ -1,16 +1,16 @@
 doctype
 html(lang=config.language prefix="og: http://ogp.me/ns#")
     head
-        include partial/head.pug
+        include head.pug
     body
         .wrap
             header
                 a.logo-link(href=url_for())
                     img(src=url_for(theme.logo) alt="logo")
-                include partial/nav.pug
+                include nav.pug
             main.container
                 block container
             footer
                 block pagination
                 block copyright
-        include partial/scripts.pug
+        include scripts.pug
