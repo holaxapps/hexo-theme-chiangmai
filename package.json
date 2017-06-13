@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "description": "A hexo theme inspired by Chiang Mai",
   "main": "index.js",
-  "scripts": {
-    "sass": "gulp sass"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/stunstunstun/hexo-theme-chiangmai"
@@ -25,5 +22,8 @@
     "gulp-autoprefixer": "^3.1.1",
     "gulp-sass": "^2.3.2",
     "gulp-pug": "^3.3.0"
-  }
+  },
+  "scripts": {
+    "sass": "gulp sass"
+  },
 }

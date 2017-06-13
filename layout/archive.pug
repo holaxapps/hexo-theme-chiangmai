@@ -4,7 +4,9 @@ block site_title
     != config.title
 
 block description
+    - var url = config.url + "/archives/"
     meta(name="description", content=config.description)
+    meta(name="og:url", content=url)
     meta(name="og:type", content="website")
     meta(name="og:title", content=config.title)
     meta(name="og:description", content=config.description)

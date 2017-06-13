@@ -36,9 +36,16 @@
 
         .post-date {
             position: absolute;
-            bottom: 16px;
+            bottom: 15px;
             color: #7f8c8d;
         }
+    }
+}
+.post-share {
+    text-align: right;
+    margin-bottom: 40px;
+    div {
+        margin-left: 10px;
     }
 }
 
