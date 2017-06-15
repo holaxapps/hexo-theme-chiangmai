@@ -1,11 +1,22 @@
 
-<img src='http://www.chiangmaijointour.com/upload/logo.JPG' height='240' align='right' />
 
-# hexo-theme-chiangmai
+<h1 align="center">
+  hexo-theme-chiangmai
+</h1>
 
-hexo-theme-chiangmai is kind of Hexo theme using HTML5, SCSS, Pug, Gulp. An example page with hexo-theme-chiangmai could be found at the below.
+<div align="center">
+  <em>hexo-theme-chiangmai is kind of Hexo theme using HTML5, SCSS, Pug, Gulp. An example page with hexo-theme-chiangmai could be found at the below.</em>
+  <em>https://www.holaxprogramming.com/</em>
+</div>
 
-> https://www.holaxprogramming.com/
+<br>
+<br>
+<br>
+<br>
+
+<div align="center">
+  <img src='http://www.chiangmaijointour.com/upload/logo.JPG' height='240'/>
+</div>
 
 ## Install
 
