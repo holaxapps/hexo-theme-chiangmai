@@ -18,10 +18,6 @@ main.container {
         width: 100%;
     }
 
-    body {
-        font-size: 15px;
-    }
-
     header {
         .logo-link img {
             height: 100px;
@@ -32,10 +28,6 @@ main.container {
                 content: "";
             }
         }
-    }
-
-    .post-block .post-title {
-        font-size: 26px;
     }
 
     .archive .post-item .post-info {
@@ -52,13 +44,9 @@ main.container {
         }
         h2, h3 {
             color: #000000;
-            font-size: 22px;
             a:before {
                 content: "";
             }
-        }
-        h4, h5, h6 {
-            font-size: 16px;
         }
     }
 

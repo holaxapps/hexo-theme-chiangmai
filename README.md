@@ -20,13 +20,13 @@
 
 ## Install
 
-### Prerequisite
+### Prerequisite Modules
 
-- hexo-generator-feed 
-- hexo-generator-archive
-- hexo-generator-sitemap 
-- hexo-renderer-pug
-- hexo-browsersync 
+- [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)
+- [hexo-generator-archive](https://github.com/hexojs/hexo-generator-archive)
+- [hexo-generator-sitemap](https://github.com/hexojs/hexo-generator-sitemap)
+- [hexo-renderer-pug](https://github.com/maxknee/hexo-render-pug)
+- [hexo-browsersync](https://github.com/hexojs/hexo-browsersync)
 
 ``` bash
 $ hexo init my-blog
@@ -36,7 +36,7 @@ $ npm install --save hexo-renderer-pug hexo-generator-feed hexo-generator-sitema
 $ git clone https://github.com/stunstunstun/hexo-theme-chiangmai.git themes/chiangmai
 ```
 
-### To use gulp
+### Use gulp to build
 
 ``` bash
 $ cd themes/chiangmai
@@ -44,9 +44,9 @@ $ npm install --save-dev gulp gulp-sass gulp-autoprefixer
 $ gulp
 ```
 
-## Configuration
+## Configuration Theme
 
-`_config.yml`
+You can configure theme by `_config.yml`
 
 ```yaml
 theme: chiangmai
@@ -57,6 +57,32 @@ archive_generator:
     yearly: false
     monthly: false
     daily: false
+```
+
+## Configuration Theme Details
+
+You can configure details `./theme/chiangmai/_config.yml`
+
+`Examples`
+
+```
+menu:
+    Archives: /archives/
+    LinkedIn: ${URL}
+# Site Images
+favicon: /favicon.ico
+logo: /logo.png
+# Profiles
+profile: /image/profile.jpg
+profile_url: ${URL}
+# Google Analytics
+ga: UA-97419941-1
+# Facebook App Id for Comments
+fb: 1258629384258634
+# Facebook Page URL
+fb_page: ${URL}
+# Copyright Infomation
+startyear: 2012
 ```
 
 ## Deploy
