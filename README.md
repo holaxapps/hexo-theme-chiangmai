@@ -47,6 +47,9 @@ $ gulp
 
 You can configure theme by `_config.yml`
 
+`examples`
+- https://github.com/holaxapps/holaxprogramming.com/blob/master/_config.yml
+
 ```yaml
 theme: chiangmai
 
