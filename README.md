@@ -78,9 +78,9 @@ logo: /logo.png
 profile: /image/profile.jpg
 profile_url: ${URL}
 # Google Analytics
-ga: UA-97419941-1
+ga: ${YOUR_GA_ID}
 # Facebook App Id for Comments
-fb: 1258629384258634
+fb: ${YOUR_FB_APP_ID}
 # Facebook Page URL
 fb_page: ${URL}
 # Copyright Infomation
