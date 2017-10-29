@@ -25,5 +25,5 @@
   },
   "scripts": {
     "sass": "gulp sass"
-  },
+  }
 }
