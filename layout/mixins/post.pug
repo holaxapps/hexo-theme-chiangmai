@@ -11,7 +11,7 @@ mixin postInfo(item)
                             a(href=url_for('/categories/' + category.name) target="_self")
                                 span!= category.name.toUpperCase()             
                 .post-date
-                    != full_date(item.date, 'll') + __('date_desc') 
+                    != full_date(item.date, 'll')
         .post-share
             .fb-like(data-href=url_for(config.url + '/' + page.path) data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false")                  
             .fb-share-button(data-href=url_for(config.url + '/' + page.path) data-layout="button" data-size="small" data-mobile-iframe="true")
