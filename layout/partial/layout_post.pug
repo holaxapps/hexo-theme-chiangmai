@@ -1,0 +1,15 @@
+doctype
+html(lang=config.language prefix="og: http://ogp.me/ns#")
+    head
+        include head.pug
+    body
+        #fb-root
+        .wrap
+            header
+                include nav.pug
+            main.container
+                block container
+            footer
+                block pagination
+                block copyright
+        include scripts.pug
