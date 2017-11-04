@@ -5,11 +5,14 @@ html(lang=config.language prefix="og: http://ogp.me/ns#")
     body
         #fb-root
         .wrap
-            header
-                include nav.pug
+            header.header
+                nav.navigation
+                    a.navigation-logo
+                        img(src='images/back.png' alt='back')
             main.container
                 block container
             footer
                 block pagination
                 block copyright
         include scripts.pug
+
