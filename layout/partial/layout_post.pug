@@ -1,0 +1,20 @@
+doctype
+html(lang=config.language prefix="og: http://ogp.me/ns#")
+    head
+        include head.pug
+    body.post
+        #fb-root
+        .wrap
+            header
+                nav.navi-post
+                    a.navi-post-back(href='javascript:history.back()')
+                        i(class="fa fa-arrow-left fa-2x", aria-hidden="true")
+                    a.navi-post-home(href=url_for())
+                        i(class="fa fa-home fa-2x", aria-hidden="true")
+            main.container
+                block container
+            footer
+                block pagination
+                block copyright
+        include scripts.pug
+
