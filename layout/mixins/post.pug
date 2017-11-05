@@ -21,7 +21,7 @@ mixin postInfo(item)
                 .fb-follow(data-href=url_for(theme.fb_page) data-layout="button_count" data-size="small" data-show-faces="true")
     else if is_home()
         .post-info
-            .post-info-details
+            .post-info-home
                 .post-categories
                     if item.categories && item.categories.length
                         each category in item.categories.data
@@ -43,9 +43,6 @@ mixin posts
                         a.post-title-link(href= url_for(item.path))
                             != item.title
                     +postInfo(item)
-                    .post-content
-                        != item.excerpt
-                    a.read-more(href= url_for(item.path))!= __('more')
         - })
 
 //- Archive Page

@@ -2,13 +2,15 @@ doctype
 html(lang=config.language prefix="og: http://ogp.me/ns#")
     head
         include head.pug
-    body
+    body.post
         #fb-root
         .wrap
-            header.header
-                nav.navigation
-                    a.navigation-logo
-                        img(src='images/back.png' alt='back')
+            header
+                nav.navi-post
+                    a.navi-post-back(href='javascript:history.back()')
+                        i(class="fa fa-arrow-left fa-2x", aria-hidden="true")
+                    a.navi-post-home(href=url_for())
+                        i(class="fa fa-home fa-2x", aria-hidden="true")
             main.container
                 block container
             footer
