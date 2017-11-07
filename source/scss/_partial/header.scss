@@ -29,14 +29,28 @@ header {
 }
 
 nav.navi-post {
+    flex-direction: row;
     width: 100%;
-    height: 50px;
-    padding-top: 15px;
+    height: 40px;
+    padding-top: 16px;
     background-color: rgba(255, 255, 255, 1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.0975);
 
+    .fa-home {
+        transform: scale(1.9, 1.9);
+    }
+    .fa-arrow-left {
+        transform: scale(1.7, 1.7); 
+    }
     .navi-post-back {
-        float: left;
-        margin-left: 5px;
+        float: left;      
+        width: 40px;
+        height: 40px;
+        padding-left: 5px;
+    }
+    .navi-post-home {
+        align-self: center;        
+        width: 40px;
+        height: 40px;
     }
 }
