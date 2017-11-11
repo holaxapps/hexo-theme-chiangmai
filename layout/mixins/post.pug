@@ -3,19 +3,17 @@ mixin postInfo(item)
         .post-info
             - var profile_img = page.profile || theme.profile;
             - var profile_url = page.profile_url || theme.profile_url;
-            .post-info-profile
-                a(href=url_for(profile_url) target="_blank")
-                    img(src=url_for(profile_img))
+
             .post-info-details
                 .post-categories
                     if item.categories && item.categories.length
                         each category in item.categories.data
                             a(href=url_for('/categories/' + category.name) target="_self")
-                                span!= category.name.toUpperCase()             
+                                span!= category.name.toUpperCase()
                 .post-date
                     != full_date(item.date, 'll')
         .post-share
-            .fb-like(data-href=url_for(config.url + '/' + page.path) data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false")                  
+            .fb-like(data-href=url_for(config.url + '/' + page.path) data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false")
             .fb-share-button(data-href=url_for(config.url + '/' + page.path) data-layout="button" data-size="small" data-mobile-iframe="true")
             if theme.fb_page
                 .fb-follow(data-href=url_for(theme.fb_page) data-layout="button_count" data-size="small" data-show-faces="true")
@@ -26,13 +24,13 @@ mixin postInfo(item)
                     if item.categories && item.categories.length
                         each category in item.categories.data
                             a(href=url_for('/categories/' + category.name) target="_self")
-                                span!= category.name.toUpperCase()             
+                                span!= category.name.toUpperCase()
 
     else if is_archive() || is_category()
         .post-info
             .post-date
                 != full_date(item.date, 'll')
-                                                    
+
 //- Index Page
 mixin posts
     ul.home.post-list
@@ -42,6 +40,8 @@ mixin posts
                     h2.post-title
                         a.post-title-link(href= url_for(item.path))
                             != item.title
+                    div.post-description
+                        != item.description ? (item.description.length > 300 ? item.description.substr(0, 300) + '...' : item.description.substr(0, 300)) : ''
                     +postInfo(item)
         - })
 

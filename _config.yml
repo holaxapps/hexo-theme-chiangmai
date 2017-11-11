@@ -1,20 +1,19 @@
 # Top navigation menus
 menu:
-    소개: /introduce/
-    강의: https://www.youtube.com/channel/UCdeU7rAkbmqjn_kZUn7fStQ
-    블로그: /archives/
-    글쓰기: https://github.com/stunstunstun/awesome-wiki/blob/master/README.md
+    Home: https://2dizzy.io/
+    Archives: /archives/
+
 # Site Images
 favicon: /favicon.ico
 logo: /logo.png
 # Profiles
-profile: /image/profile.jpg
-profile_url: https://github.com/stunstunstun
+#profile: /image/profile.jpg
+#profile_url: https://github.com/stunstunstun
 # Google Analytics
-ga: UA-97419941-1
+ga:
 # Facebook App Id for Comments
-fb: 1258629384258634
+fb:
 # Facebook Page URL
-fb_page: https://www.facebook.com/holaxprogramming/
+fb_page:
 # Copyright Infomation
-startyear: 2012
+startyear: 2017
