@@ -41,7 +41,7 @@ mixin posts
                         a.post-title-link(href= url_for(item.path))
                             != item.title
                     div.post-description
-                        != item.description ? (item.description.length > 300 ? item.description.substr(0, 300) + '...' : item.description.substr(0, 300)) : ''
+                        != item.description ? item.description : ''
                     +postInfo(item)
         - })
 
