@@ -19,31 +19,10 @@ mixin postInfo(item)
             .fb-share-button(data-href=url_for(config.url + '/' + page.path) data-layout="button" data-size="small" data-mobile-iframe="true")
             if theme.fb_page
                 .fb-follow(data-href=url_for(theme.fb_page) data-layout="button_count" data-size="small" data-show-faces="true")
-    else if is_home()
-        .post-info
-            .post-info-home
-                .post-categories
-                    if item.categories && item.categories.length
-                        each category in item.categories.data
-                            a(href=url_for('/categories/' + category.name) target="_self")
-                                span!= category.name.toUpperCase()             
-
     else if is_archive() || is_category()
         .post-info
             .post-date
                 != full_date(item.date, 'll')
-                                                    
-//- Index Page
-mixin posts
-    ul.home.post-list
-        - page.posts.each(function (item) {
-            li.post-list-item
-                article.post-block
-                    h2.post-title
-                        a.post-title-link(href= url_for(item.path))
-                            != item.title
-                    +postInfo(item)
-        - })
 
 //- Archive Page
 mixin postList
