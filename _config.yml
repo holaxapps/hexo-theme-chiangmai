@@ -6,6 +6,8 @@ menu:
 # Site Images
 favicon: /favicon.ico
 logo: /logo.png
+rss_link: /atom.xml
+github_link: https://github.com/vkuznecovas
 # Profiles
 #profile: /image/profile.jpg
 #profile_url: https://github.com/stunstunstun

@@ -434,7 +434,6 @@ header {
     padding: 2px 15px; }
     header .nav-list-item a:before {
       content: "#";
-      color: #ce1458;
       position: absolute;
       left: 0.1em;
       top: 0.10em;
@@ -855,5 +854,13 @@ footer {
       font-weight: 100; }
     footer .copyright a:hover {
       color: #888; }
+
+.social-wrapper {
+  margin-bottom: 10px; }
+  .social-wrapper a {
+    margin-right: 4px;
+    margin-left: 4px; }
+  .social-wrapper a:hover {
+    color: #ce1458; }
 
 /*# sourceMappingURL=chiangmai.css.map */

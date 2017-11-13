@@ -7,6 +7,12 @@ html(lang=config.language prefix="og: http://ogp.me/ns#")
             header
                 a.logo-link(href=url_for())
                     img(src=url_for(theme.logo) alt="logo")
+                div.social-wrapper
+                    a.icon-facebook(href=url_for(theme.facebook_link) target="_blank")
+                    a.icon-instagram(href=url_for(theme.instagram_link) target="_blank")
+                    a.icon-twitter(href=url_for(theme.twitter_link) target="_blank")
+                    a.icon-github(href=url_for(theme.github_link) target="_blank")
+                    a.icon-rss(href=url_for(theme.rss_link))
                 include nav.pug
             main.container
                 block container
