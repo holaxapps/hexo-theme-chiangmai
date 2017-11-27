@@ -7,7 +7,7 @@ html(lang=config.language prefix="og: http://ogp.me/ns#")
         .wrap
             header
                 nav.navi-post
-                    a.navi-post-back(href='javascript:history.back()')
+                    a.navi-post-back(href="javascript:history.back()")
                         i(class="fa fa-arrow-left", aria-hidden="true")
                     a.navi-post-home(href=url_for())
                         i(class="fa fa-home", aria-hidden="true")
@@ -17,4 +17,3 @@ html(lang=config.language prefix="og: http://ogp.me/ns#")
                 block pagination
                 block copyright
         include scripts.pug
-
