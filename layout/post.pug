@@ -20,10 +20,8 @@ block container
     include mixins/post.pug
     +post(page)
 
-block pagination
-    include mixins/paginator.pug
-    +post
+block comment
     include partial/comment.pug
 
-block copyright.pug
+block copyright
     include partial/copyright.pug

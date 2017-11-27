@@ -1,3 +1,6 @@
+if theme.adsense
+    script.
+        (adsbygoogle = window.adsbygoogle || []).push({});
 if theme.fb    
     script.
         window.fbAsyncInit=function(){FB.init({appId:"#{theme.fb}",cookie:!0,xfbml:!0,version:"v2.8"}),FB.AppEvents.logPageView()},function(e,n,t){var o,c=e.getElementsByTagName(n)[0];e.getElementById(t)||((o=e.createElement(n)).id=t,o.src="//connect.facebook.net/en_US/sdk.js",c.parentNode.insertBefore(o,c))}(document,"script","facebook-jssdk");
