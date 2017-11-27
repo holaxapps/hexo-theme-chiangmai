@@ -5,6 +5,7 @@
 
 <div align="center">
   <em>hexo-theme-chiangmai is kind of Hexo theme using HTML5, SCSS, Pug, Gulp. An example page with hexo-theme-chiangmai could be found at the below.</em>
+  <br/>
   <em>https://www.holaxprogramming.com/</em>
 </div>
 
