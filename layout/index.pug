@@ -14,6 +14,9 @@ block description
 block container
     include mixins/main.pug
     +posts
+    if theme.adsense
+        - var clientId = theme.adsense;
+        ins(class="adsbygoogle adsense-bottom", style="display:block", data-ad-client=clientId, data-ad-slot="3335325225", data-ad-format="auto")
 
 block pagination
     include mixins/paginator.pug

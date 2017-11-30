@@ -1,3 +1,4 @@
+//- Post Details
 mixin postInfo(item)
     if is_post()
         .post-info
@@ -17,8 +18,8 @@ mixin postInfo(item)
         .post-share
             .fb-like(data-href=url_for(config.url + '/' + page.path) data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false")                  
             .fb-share-button(data-href=url_for(config.url + '/' + page.path) data-layout="button" data-size="small" data-mobile-iframe="true")
-            if theme.fb_page
-                .fb-follow(data-href=url_for(theme.fb_page) data-layout="button_count" data-size="small" data-show-faces="true")
+            if theme.fb
+                .fb-follow(data-href=url_for(theme.fb.page) data-layout="button_count" data-size="small" data-show-faces="true")
     else if is_archive() || is_category()
         .post-info
             .post-date

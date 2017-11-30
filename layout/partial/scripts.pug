@@ -1,11 +1,11 @@
 if theme.adsense
+    script(async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js")
     script.
         (adsbygoogle = window.adsbygoogle || []).push({});
-if theme.fb    
+if theme.fb
     script.
-        window.fbAsyncInit=function(){FB.init({appId:"#{theme.fb}",cookie:!0,xfbml:!0,version:"v2.8"}),FB.AppEvents.logPageView()},function(e,n,t){var o,c=e.getElementsByTagName(n)[0];e.getElementById(t)||((o=e.createElement(n)).id=t,o.src="//connect.facebook.net/en_US/sdk.js",c.parentNode.insertBefore(o,c))}(document,"script","facebook-jssdk");
+        window.fbAsyncInit=function(){FB.init({appId:"#{theme.fb.app_id}",cookie:!0,xfbml:!0,version:"v2.8"}),FB.AppEvents.logPageView()},function(e,n,t){var o,c=e.getElementsByTagName(n)[0];e.getElementById(t)||((o=e.createElement(n)).id=t,o.src="//connect.facebook.net/en_US/sdk.js",c.parentNode.insertBefore(o,c))}(document,"script","facebook-jssdk");
 if theme.ga
     script.
         (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create','#{theme.ga}','auto');ga('send','pageview');
-        
   

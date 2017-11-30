@@ -1,7 +1,5 @@
 meta(charset="utf-8")
 meta(name="X-UA-Compatible", content="IE=edge")
-if theme.adsense
-    script(async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js")
 title
     block site_title
 block description
@@ -9,6 +7,6 @@ meta(name="viewport", content="width=device-width, initial-scale=1")
 link(rel="icon", href=url_for(theme.favicon))
 link(rel="stylesheet", href=url_for("css/chiangmai.css"))
 if theme.fb
-    meta(name="fb:app_id", content=theme.fb)
+    meta(name="fb:app_id", content=theme.fb.app_id)
 - var xml = config.url + '/atom.xml'
     link(rel="search", type="application/opensearchdescription+xml", href=xml, title=config.title)

@@ -5,7 +5,7 @@ block site_title
 
 block description
     - var desc = page.desc || config.description;
-    - var articleURL = config.url + "/" + page.path
+    - var articleURL = config.url + "/" + page.path;
     - var imageURL = page.image || config.url + theme.logo;
     - var re = /^(https):\/\/*/gi;
     - var imageTag = re.test(imageURL) ? "og:image:secure_url" : "og:image";
@@ -15,6 +15,16 @@ block description
     meta(name="og:title", content=page.title)
     meta(name="og:description", content=desc)
     meta(name=imageTag, content=imageURL)
+
+block header
+    nav.navi-post
+        a.navi-post-back(href="javascript:history.back()")
+            i(class="fa fa-arrow-left", aria-hidden="true")
+        a.navi-post-home(href=url_for())
+            i(class="fa fa-home", aria-hidden="true")
+    if theme.adsense
+        - var clientId = theme.adsense;
+        ins(class="adsbygoogle adsense-top", style="display:block", data-ad-client=clientId, data-ad-slot="6129396565", data-ad-format="auto")
 
 block container
     include mixins/post.pug

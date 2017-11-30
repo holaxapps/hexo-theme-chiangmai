@@ -12,10 +12,10 @@ profile: /image/profile.jpg
 profile_url: https://github.com/stunstunstun
 # Google Analytics
 ga: UA-97419941-1
-# Facebook App Id for Comments
-fb: 1258629384258634
-# Facebook Page URL
-fb_page: https://www.facebook.com/holaxprogramming/
+# Facebook App
+fb:
+  app_id: 1258629384258634
+  page: https://www.facebook.com/holaxprogramming/
 # Google AdSense
 adsense: ca-pub-6188640546219653
 # Copyright Infomation
