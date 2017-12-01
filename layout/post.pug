@@ -4,17 +4,19 @@ block site_title
     != page.title + " · " + config.title
 
 block description
-    - var desc = page.desc || config.description;
-    - var articleURL = config.url + "/" + page.path;
-    - var imageURL = page.image || config.url + theme.logo;
     - var re = /^(https):\/\/*/gi;
-    - var imageTag = re.test(imageURL) ? "og:image:secure_url" : "og:image";
+    - var desc = page.desc || config.description;
+    - var postURL = config.url + "/" + page.path;
+    - var defaultImageURL = config.url + theme.cover_image_url;
+    - var imageURL = page.image || defaultImageURL;
     meta(name="description", content=desc)
-    meta(name="og:url", content=articleURL)
-    meta(name="og:type", content="article")
     meta(name="og:title", content=page.title)
+    meta(name="og:type", content="website")
+    meta(name="og:url", content=postURL)
+    meta(name="og:image", content=defaultImageURL) 
+    if re.test(imageURL)
+        meta(name="og:image:secure_url" , content=imageURL)
     meta(name="og:description", content=desc)
-    meta(name=imageTag, content=imageURL)
 
 block header
     nav.navi-post
@@ -22,13 +24,16 @@ block header
             i(class="fa fa-arrow-left", aria-hidden="true")
         a.navi-post-home(href=url_for())
             i(class="fa fa-home", aria-hidden="true")
-    if theme.adsense
-        - var clientId = theme.adsense;
-        ins(class="adsbygoogle adsense-top", style="display:block", data-ad-client=clientId, data-ad-slot="6129396565", data-ad-format="auto")
+    include mixins/adsense.pug
+    +post
 
 block container
     include mixins/post.pug
     +post(page)
+
+block pagination
+    include mixins/paginator.pug
+    +post
 
 block comment
     include partial/comment.pug

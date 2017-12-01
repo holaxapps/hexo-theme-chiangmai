@@ -7,6 +7,7 @@ menu:
 # Site Images
 favicon: /favicon.ico
 logo: /logo.png
+cover_image_url: http://image.toast.com/aaaaahq/hola_cover.JPG
 # Profiles
 profile: /image/profile.jpg
 profile_url: https://github.com/stunstunstun

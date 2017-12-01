@@ -1,3 +1,7 @@
+main.post {
+    margin: 10px 10px 46px;
+}
+
 nav.navi-post {
     flex-direction: row;
     width: 100%;
@@ -26,12 +30,8 @@ nav.navi-post {
     }
 }
 
-main.post {
-    margin: 12px 10px;
-}
-
 .post-title {
-    margin: 20px 5px 20px 0px;
+    padding-top: 5px;
     color: rgba(0, 0, 0, 0.8);
     font-size: 30px;
 }
@@ -65,25 +65,24 @@ main.post {
     }
 
     .post-info-details {
+        padding: 5px;
         position: relative;
         -webkit-flex: 1;
                 flex: 1;
         .post-categories {
             position: absolute;
-            top: 12px;
+            top: 5px;
             span {
                 font-size: 15px;
-                padding: 4px 7px 4px 8px;
-                margin-left: 1px;
+                padding: 4px 8px 4px;
                 margin-right: 10px;
                 background-color: #4f88ea;
                 color: #ffffff;
             }
         }
-
         .post-date {
             position: absolute;
-            bottom: 15px;
+            bottom: 5px;
             color: #7f8c8d;
         }
     }
@@ -91,7 +90,7 @@ main.post {
 
 .post-share {
     text-align: right;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     div {
         margin-left: 10px;
     }
