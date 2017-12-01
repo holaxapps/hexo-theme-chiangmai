@@ -5,7 +5,7 @@ block site_title
 
 block description
     - var re = /^(https):\/\/*/gi;
-    - var defaultImageURL = config.url + theme.cover_image_url;
+    - var defaultImageURL = theme.cover_image_url;
     - var imageURL = page.image || defaultImageURL;
     meta(name="description", content=config.description)
     meta(name="og:url", content=config.url)
