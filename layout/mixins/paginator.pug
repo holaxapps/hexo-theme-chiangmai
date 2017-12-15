@@ -12,8 +12,8 @@ mixin home
 mixin post
     - var prevPage = page.prev;
     - var nextPage = page.next;
-    - var prevPath = prevPage ? prevPage.path : false;
-    - var nextPath = nextPage ? nextPage.path : false;
+    - var prevPath = nextPage ? nextPage.path : false;
+    - var nextPath = prevPage ? prevPage.path : false;
     .paginator
         if prevPath
             a.prev(href=url_for(prevPath))
