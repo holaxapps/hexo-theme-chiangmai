@@ -3,8 +3,13 @@ mixin home
         - var clientId = theme.adsense;
         ins(class="adsbygoogle adsense-bottom", style="display:block", data-ad-client=clientId, data-ad-slot="3335325225", data-ad-format="auto")
 
-mixin post
+mixin post_top
     if theme.adsense
         - var clientId = theme.adsense;
         ins(class="adsbygoogle adsense-top", style="display:block", data-ad-client=clientId, data-ad-slot="6129396565", data-ad-format="auto")
+
+mixin post_bottom
+    if theme.adsense
+        - var clientId = theme.adsense;
+        ins(class="adsbygoogle adsense-bottom", style="display:block", data-ad-client=clientId, data-ad-slot="6129396565", data-ad-format="auto")
 

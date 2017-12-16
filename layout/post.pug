@@ -24,8 +24,6 @@ block header
             i(class="fa fa-arrow-left", aria-hidden="true")
         a.navi-post-home(href=url_for())
             i(class="fa fa-home", aria-hidden="true")
-    include mixins/adsense.pug
-    +post
 
 block container
     include mixins/post.pug
@@ -34,6 +32,8 @@ block container
 block pagination
     include mixins/paginator.pug
     +post
+    include mixins/adsense.pug
+    +post_bottom
 
 block comment
     include partial/comment.pug
