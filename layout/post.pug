@@ -4,7 +4,7 @@ block site_title
     != page.title + " · " + config.title
 
 block description
-    - var re = /^(https):\/\/*/gi;
+    - var secureImageRegex = /^(https):\/\/*/gi;
     - var desc = page.desc || config.description;
     - var postURL = config.url + "/" + page.path;
     - var defaultImageURL = theme.cover_image_url;
@@ -13,9 +13,11 @@ block description
     meta(name="og:title", content=page.title)
     meta(name="og:type", content="website")
     meta(name="og:url", content=postURL)
-    meta(name="og:image", content=defaultImageURL) 
-    if re.test(imageURL)
+    if secureImageRegex.test(imageURL)
+        meta(name="og:image", content=imageURL)
         meta(name="og:image:secure_url" , content=imageURL)
+    else
+        meta(name="og:image", content=defaultImageURL)
     meta(name="og:description", content=desc)
 
 block header
