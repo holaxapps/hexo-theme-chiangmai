@@ -41,7 +41,7 @@ $ git clone https://github.com/stunstunstun/hexo-theme-chiangmai.git themes/chia
 ``` bash
 $ cd themes/chiangmai
 $ npm install --save-dev gulp gulp-sass gulp-autoprefixer
-$ gulp
+$ npm run build
 ```
 
 ## Configuration Theme
