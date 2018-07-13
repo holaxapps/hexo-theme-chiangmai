@@ -80,10 +80,11 @@ profile: /image/profile.jpg
 profile_url: ${URL}
 # Google Analytics
 ga: ${YOUR_GA_ID}
+fb:
 # Facebook App Id for Comments
-fb: ${YOUR_FB_APP_ID}
+    app_id: ${YOUR_FB_APP_ID}
 # Facebook Page URL
-fb_page: ${URL}
+    fb_page: ${URL}
 # Copyright Infomation
 startyear: 2012
 ```
