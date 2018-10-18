@@ -24,6 +24,7 @@
     "eslint": "^4.10.0"
   },
   "scripts": {
+    "build": "gulp",
     "sass": "gulp sass"
   }
 }
