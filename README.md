@@ -36,12 +36,12 @@ $ npm install --save hexo-renderer-pug hexo-generator-feed hexo-generator-sitema
 $ git clone https://github.com/stunstunstun/hexo-theme-chiangmai.git themes/chiangmai
 ```
 
-### Use gulp to build
+### Install and build
 
 ``` bash
 $ cd themes/chiangmai
-$ npm install --save-dev gulp gulp-sass gulp-autoprefixer
-$ npm run build
+$ yarn install
+$ yarn build
 ```
 
 ## Configuration Theme
@@ -89,19 +89,11 @@ fb:
 startyear: 2012
 ```
 
-## Deploy
-
-```shell
-$ hexo clean
-$ hexo generate
-$ hexo deploy
-```
-
 ## Update Theme
 
 ``` bash
-cd themes/chiangmai
-git pull
+$ cd themes/chiangmai
+$ git pull
 ```
 
 ## License
